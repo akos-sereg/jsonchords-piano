@@ -5,7 +5,7 @@ const MainPage = () => {
 
     return (
        <div>
-           <Piano displayNotes={['O5-G', 'O2-C']} />
+           <Piano displayNotes={['O5-G', 'O2-C', "O4-A#"]} />
        </div>
    );
 

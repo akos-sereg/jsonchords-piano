@@ -28,3 +28,11 @@ export const noteOffset: any = {
     'A': 7,
     'H': 7,
 };
+
+export const halfNoteOffsets: any = {
+    'C': 57,
+    'D': 145,
+    'F': 322,
+    'G': 410,
+    'A': 499,
+}

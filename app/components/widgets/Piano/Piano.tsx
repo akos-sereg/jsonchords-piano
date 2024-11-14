@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { getScreenRatio } from '../../../packages/utils/screenUtils';
 import imgOctave from '../../../images/octav.png';
+import pressed4 from '../../../images/pressed-4.png';
 import {
     noteMap,
     noteOffset,
@@ -9,6 +10,7 @@ import {
     octaveImageOriginalWidth,
     indexedNotes,
     noteOriginalWidth,
+    halfNoteOffsets,
 } from './const';
 
 interface PianoProps {
@@ -25,9 +27,15 @@ const Piano = ({ displayNotes }: PianoProps) => {
         const octavNumber = Number(fragments[0].replace(/O/, ''));
         const noteImage: any = noteMap[fragments[1]];
         if (fragments[1].includes('#')) {
-            return null;
+           const offsetX = (ratio * octaveImageOriginalWidth) * (octavNumber - 1) + halfNoteOffsets[fragments[1].replace('#', '')] * ratio;
+           return (
+               <img
+                   src={pressed4}
+                   width={69 * ratio}
+                   style={{ position: 'absolute', left: offsetX }}
+               />);
         } else {
-            var offsetX = (ratio * octaveImageOriginalWidth) * (octavNumber - 1)
+            const offsetX = (ratio * octaveImageOriginalWidth) * (octavNumber - 1)
                 + (indexedNotes.indexOf(fragments[1]) * (noteOriginalWidth * ratio))
                 + noteOffset[fragments[1]] * ratio;
             return (
