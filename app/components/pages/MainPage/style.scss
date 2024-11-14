@@ -1,5 +1,9 @@
-.jsonchordsText {
-    width: 100%;
-    border: solid 1px #000000;
-    height: fit-content;
+.codeAndEpisodes {
+    display: flex;
+    flex-direction: 'column';
+    gap: 30px;
+}
+
+.episodes {
+    width: 50%;
 }
