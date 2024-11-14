@@ -7,21 +7,24 @@ import MainPage from './pages/MainPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Header from './widgets/Header';
 import Footer from '../components/widgets/Footer';
+import { JsonChordsTextContextProvider } from './widgets/JsonChordsText/JsonChordsTextContext';
 
 const App = () => (
   <div>
     <Header />
 
     <div className={`container-fluid`}>
-      <Switch>
-        <Route exact path="/" component={MainPage} />
-        <Route path="/app" component={MainPage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/authors" component={AuthorsPage} />
-        <Route path="/author/:id" component={ManageAuthorPage} />
-        <Route path="/author" component={ManageAuthorPage} />
-        <Route path="" component={NotFoundPage} />
-      </Switch>
+      <JsonChordsTextContextProvider>
+        <Switch>
+            <Route exact path="/" component={MainPage} />
+            <Route path="/app" component={MainPage} />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/authors" component={AuthorsPage} />
+            <Route path="/author/:id" component={ManageAuthorPage} />
+            <Route path="/author" component={ManageAuthorPage} />
+            <Route path="" component={NotFoundPage} />
+        </Switch>
+      </JsonChordsTextContextProvider>
     </div>
 
     <Footer />
