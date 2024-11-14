@@ -4,7 +4,6 @@ export const getScreenRatio = () => {
 
     let selectedRatio = 0.2;
     ratios.forEach((ratio) => {
-        console.log('--> ', (ratio * octaveImageWidth * 7), window.innerWidth);
         if ((ratio * octaveImageWidth * 7 * 1.2) < window.innerWidth) {
             selectedRatio = ratio;
         }
