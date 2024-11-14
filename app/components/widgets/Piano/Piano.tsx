@@ -50,7 +50,9 @@ const Piano = ({ displayNotes }: PianoProps) => {
     return (
        <div style={{ position: 'relative' }}>
            {displayedNotes}
-           {octaves.map((id, index) => <img key={id} src={imgOctave} width={619 * ratio} style={{ borderRight: index == 6 ? 'solid 2px black' : '' }} />)}
+           <div style={{ width: 'fit-content', borderRight: 'solid 2px #000000' }}>
+                {octaves.map((id, index) => <img key={id} src={imgOctave} width={619 * ratio} />)}
+           </div>
        </div>
    );
 

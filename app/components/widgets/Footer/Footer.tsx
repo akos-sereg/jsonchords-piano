@@ -3,7 +3,7 @@ import styles from './style.scss';
 
 const Footer = () => (
   <div>
-    <p className={styles.footer}>This web app is using React, Redux, Jest, Webpack, etc ...</p>
+    <p className={styles.footer}>Code on GitHub: <a href="https://github.com/akos-sereg/jsonchords-piano">https://github.com/akos-sereg/jsonchords-piano</a></p>
   </div>
 );
 

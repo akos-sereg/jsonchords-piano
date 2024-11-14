@@ -12,7 +12,7 @@ const App = () => (
   <div>
     <Header />
 
-    <div className="container-fluid">
+    <div className={`container-fluid`}>
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/app" component={MainPage} />
