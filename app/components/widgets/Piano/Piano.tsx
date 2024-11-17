@@ -18,7 +18,6 @@ interface PianoProps {
 }
 
 const Piano = ({ displayNotes }: PianoProps) => {
-
     let ratio = getScreenRatio();
 
     const octaves = ['O1', 'O2', 'O3', 'O4', 'O5', 'O6', 'O7'];

@@ -8,6 +8,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import Header from './widgets/Header';
 import Footer from '../components/widgets/Footer';
 import { JsonChordsTextContextProvider } from './widgets/JsonChordsText/JsonChordsTextContext';
+import { PlayingContextProvider } from './widgets/PlayControls/PlayingContext';
 
 const App = () => (
   <div>
@@ -15,15 +16,17 @@ const App = () => (
 
     <div className={`container-fluid`}>
       <JsonChordsTextContextProvider>
-        <Switch>
-            <Route exact path="/" component={MainPage} />
-            <Route path="/app" component={MainPage} />
-            <Route path="/about" component={AboutPage} />
-            <Route path="/authors" component={AuthorsPage} />
-            <Route path="/author/:id" component={ManageAuthorPage} />
-            <Route path="/author" component={ManageAuthorPage} />
-            <Route path="" component={NotFoundPage} />
-        </Switch>
+        <PlayingContextProvider>
+            <Switch>
+                <Route exact path="/" component={MainPage} />
+                <Route path="/app" component={MainPage} />
+                <Route path="/about" component={AboutPage} />
+                <Route path="/authors" component={AuthorsPage} />
+                <Route path="/author/:id" component={ManageAuthorPage} />
+                <Route path="/author" component={ManageAuthorPage} />
+                <Route path="" component={NotFoundPage} />
+            </Switch>
+        </PlayingContextProvider>
       </JsonChordsTextContextProvider>
     </div>
 
