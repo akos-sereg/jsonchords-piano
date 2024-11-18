@@ -35,9 +35,7 @@ export const PlayingContextProvider: FC = ({ children }) => {
         setPlayingChord,
     }), [isPlaying, setPlaying, setPlayingEpisode, playingEpisode, playingChord, setPlayingChord]);
 
-    console.log('--> isPlaying: ', isPlaying);
     useEffect(() => {
-        console.log('isPlaying: ', isPlaying);
         if (!isPlaying) {
             return;
         }
@@ -58,7 +56,6 @@ export const PlayingContextProvider: FC = ({ children }) => {
                 return;
             }
         }, data.episodes[playingEpisode].chords[playingChord].interval);
-        console.log('--> waiting ', data.episodes[playingEpisode].chords[playingChord].interval);
 
     }, [isPlaying, playingEpisode, playingChord]);
 

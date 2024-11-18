@@ -1,6 +1,7 @@
 /* eslint consistent-return:0 */
 
 const express = require('express');
+const path = require('path');
 const logger = require('./util//logger');
 
 const argv = require('./util/argv');
@@ -23,6 +24,9 @@ setup(app, {
 const customHost = argv.host || process.env.HOST;
 const host = customHost || null; // Let http.Server use its default IPv6/4 host
 const prettyHost = customHost || 'localhost';
+
+console.log('--> static', path.join(__dirname, 'static'));
+app.use('/static', express.static(path.join(__dirname, 'static')));
 
 // Start your app.
 app.listen(port, host, (err) => {

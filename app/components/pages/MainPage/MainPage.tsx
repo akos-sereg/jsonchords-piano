@@ -9,11 +9,11 @@ import styles from './style.scss';
 
 const MainPage = () => {
     const { isValidJson, data } = useContext(JsonChordsTextContext);
-    const { playingEpisode, playingChord } = useContext(PlayingContext);
+    const { playingEpisode, playingChord, isPlaying } = useContext(PlayingContext);
 
     return (
        <div>
-           <Piano displayNotes={data ? data.episodes[playingEpisode].chords[playingChord].chord : []} />
+           <Piano displayNotes={data && isPlaying ? data.episodes[playingEpisode].chords[playingChord].chord : []} />
            <div className={styles.codeAndEpisodes}>
               <JsonChordsText />
               <div className={styles.episodes}>

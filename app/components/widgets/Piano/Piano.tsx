@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useEffect } from 'react';
 import { getScreenRatio } from '../../../packages/utils/screenUtils';
+import { playSound } from './PianoAudio';
 import imgOctave from '../../../images/octav.png';
 import pressed4 from '../../../images/pressed-4.png';
 import {
@@ -21,10 +22,16 @@ const Piano = ({ displayNotes }: PianoProps) => {
     let ratio = getScreenRatio();
 
     const octaves = ['O1', 'O2', 'O3', 'O4', 'O5', 'O6', 'O7'];
+    console.log('--> refresh: ', displayNotes);
     const displayedNotes = displayNotes.map((note) => {
         const fragments = note.split('-');
         const octavNumber = Number(fragments[0].replace(/O/, ''));
         const noteImage: any = noteMap[fragments[1]];
+
+        // play sound
+        playSound(note);
+
+        // display on UI
         if (fragments[1].includes('#')) {
            const offsetX = (ratio * octaveImageOriginalWidth) * (octavNumber - 1) + halfNoteOffsets[fragments[1].replace('#', '')] * ratio;
            return (
@@ -52,6 +59,7 @@ const Piano = ({ displayNotes }: PianoProps) => {
            <div style={{ width: 'fit-content', borderRight: 'solid 2px #000000' }}>
                 {octaves.map((id, index) => <img key={id} src={imgOctave} width={619 * ratio} />)}
            </div>
+           <div id="audio" />
        </div>
    );
 
