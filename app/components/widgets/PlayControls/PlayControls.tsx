@@ -65,7 +65,7 @@ const PlayControls = () => {
                                 href="#"
                                 className={`list-group-item ${index === playingChord ? 'active' : ''}`}
                                 onClick={(e) => handleChordClick(e, index)}
-                            >{chordItem.chord}</a>
+                            >{chordItem.chord.map((c: string) => `${c.split('-')[1]} `)}</a>
                           ))}
                         </div>
                     </div>
