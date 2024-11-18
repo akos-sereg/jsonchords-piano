@@ -37,6 +37,10 @@ const PlayControls = () => {
         setPlaying(false);
     }
 
+    useEffect(() => {
+        document.getElementById(`chord-${playingChord}`)?.scrollIntoView(true);
+    }, [playingChord]);
+
     return (
         <div>
             <div className={styles.container}>
@@ -62,6 +66,7 @@ const PlayControls = () => {
                         <div className="list-group">
                           {data.episodes[playingEpisode].chords.map((chordItem: any, index: number) => (
                             <a
+                                id={`chord-${index}`}
                                 href="#"
                                 className={`list-group-item ${index === playingChord ? 'active' : ''}`}
                                 onClick={(e) => handleChordClick(e, index)}
