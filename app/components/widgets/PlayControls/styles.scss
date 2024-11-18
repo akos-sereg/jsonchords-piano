@@ -5,7 +5,7 @@
     gap: 10px;
 }
 
-.episodeListContainer {
+.listContainer {
     width: 280px;
     height: 400px;
     overflow-y: scroll;
@@ -14,4 +14,8 @@
 .episodeListAndChordSpinner {
     display: flex;
     flex-direction: row;
+}
+
+.progress {
+    width: 560px;
 }
