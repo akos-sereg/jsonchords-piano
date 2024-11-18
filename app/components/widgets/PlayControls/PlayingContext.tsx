@@ -43,14 +43,12 @@ export const PlayingContextProvider: FC = ({ children }) => {
         setTimeout(() => {
             const nextPlayingChord = playingChord + 1;
             if (data.episodes[playingEpisode].chords.length > nextPlayingChord) {
-                console.log('--> next chord', nextPlayingChord);
                 setPlayingChord(nextPlayingChord);
                 return;
             }
 
             const nextEpisode = playingEpisode + 1;
             if (data.episodes.length > nextEpisode) {
-                console.log('--> next episode', nextEpisode);
                 setPlayingChord(0);
                 setPlayingEpisode(nextEpisode);
                 return;

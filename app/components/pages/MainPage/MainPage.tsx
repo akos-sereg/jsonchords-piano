@@ -13,7 +13,7 @@ const MainPage = () => {
 
     return (
        <div>
-           <Piano displayNotes={data && isPlaying ? data.episodes[playingEpisode].chords[playingChord].chord : []} />
+           <Piano displayNotes={data ? data.episodes[playingEpisode].chords[playingChord].chord : []} />
            <div className={styles.codeAndEpisodes}>
               <JsonChordsText />
               <div className={styles.episodes}>

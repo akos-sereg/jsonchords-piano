@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { useEffect, useContext } from 'react';
 import styles from './styles.scss';
-import JsonChordsTextContext from '../JsonChordsText/JsonChordsTextContext'
+import JsonChordsTextContext from '../JsonChordsText/JsonChordsTextContext';
 import JsonValidationSectionMessage from '../JsonChordsText/JsonValidationSectionMessage';
-import PlayingContext from './PlayingContext'
-import ChordSpinner from '../ChordSpinner/ChordSpinner';
+import PlayingContext from './PlayingContext';
 
 const PlayControls = () => {
     const { isValidJson, data } = useContext(JsonChordsTextContext);
@@ -14,6 +13,7 @@ const PlayControls = () => {
         playingEpisode,
         setPlayingEpisode,
         setPlayingChord,
+        playingChord,
     } = useContext(PlayingContext);
 
     const handlePlay = () => {
@@ -28,6 +28,12 @@ const PlayControls = () => {
         event.stopPropagation();
         setPlayingEpisode(episodeIndex);
         setPlayingChord(0);
+        setPlaying(false);
+    }
+
+    const handleChordClick = (event: any, chordIndex: number) => {
+        event.stopPropagation();
+        setPlayingChord(chordIndex);
         setPlaying(false);
     }
 
@@ -54,7 +60,17 @@ const PlayControls = () => {
                         </div>
                     </div>
 
-                    <ChordSpinner />
+                    <div className={styles.episodeListContainer}>
+                        <div className="list-group">
+                          {data.episodes[playingEpisode].chords.map((chordItem: any, index: number) => (
+                            <a
+                                href="#"
+                                className={`list-group-item ${index === playingChord ? 'active' : ''}`}
+                                onClick={(e) => handleChordClick(e, index)}
+                            >{chordItem.chord}</a>
+                          ))}
+                        </div>
+                    </div>
                 </div>
             ) : null}
         </div>
