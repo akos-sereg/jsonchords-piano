@@ -35,18 +35,6 @@ const JsonChordsText = () => {
 
     return (
         <div>
-            {!isValidJson ? (
-                <div className="alert alert-danger" role="alert">
-                  <span className="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                  <span className="sr-only">Error:</span>
-                  &nbsp;&nbsp;Enter a valid JSON
-                </div>
-            ) : (
-                <div className="alert alert-info" role="info">
-                    {data.title}
-                </div>
-            )}
-
             <textarea
                 ref={textAreaRef}
                 onChange={handleJsonChanged}

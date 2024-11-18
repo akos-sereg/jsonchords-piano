@@ -2,7 +2,9 @@ import * as React from 'react';
 import { useEffect, useContext } from 'react';
 import styles from './styles.scss';
 import JsonChordsTextContext from '../JsonChordsText/JsonChordsTextContext'
+import JsonValidationSectionMessage from '../JsonChordsText/JsonValidationSectionMessage';
 import PlayingContext from './PlayingContext'
+import ChordSpinner from '../ChordSpinner/ChordSpinner';
 
 const PlayControls = () => {
     const { isValidJson, data } = useContext(JsonChordsTextContext);
@@ -37,9 +39,9 @@ const PlayControls = () => {
                 <button className="btn btn-default" disabled={!isValidJson}>&lt; Previous</button>
                 <button className="btn btn-default" disabled={!isValidJson}>Next &gt;</button>
             </div>
+             <JsonValidationSectionMessage />
             {isValidJson ? (
-                <div>
-                    Episodes
+                <div className={styles.episodeListAndChordSpinner}>
                     <div className={styles.episodeListContainer}>
                         <div className="list-group">
                           {data.episodes.map((episode: any, index: number) => (
@@ -51,6 +53,8 @@ const PlayControls = () => {
                           ))}
                         </div>
                     </div>
+
+                    <ChordSpinner />
                 </div>
             ) : null}
         </div>
