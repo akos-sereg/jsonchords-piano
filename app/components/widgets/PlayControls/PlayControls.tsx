@@ -5,24 +5,54 @@ import JsonChordsTextContext from '../JsonChordsText/JsonChordsTextContext'
 import PlayingContext from './PlayingContext'
 
 const PlayControls = () => {
-    const { isValidJson } = useContext(JsonChordsTextContext);
-    const { isPlaying, setPlaying } = useContext(PlayingContext);
+    const { isValidJson, data } = useContext(JsonChordsTextContext);
+    const {
+        isPlaying,
+        setPlaying,
+        playingEpisode,
+        setPlayingEpisode,
+        setPlayingChord,
+    } = useContext(PlayingContext);
 
     const handlePlay = () => {
-        console.log('--> set Playing: true');
         setPlaying(true);
     }
 
-     const handlePause = () => {
+    const handlePause = () => {
+        setPlaying(false);
+    }
+
+    const handleEpisodeClick = (event: any, episodeIndex: number) => {
+        event.stopPropagation();
+        setPlayingEpisode(episodeIndex);
+        setPlayingChord(0);
         setPlaying(false);
     }
 
     return (
-        <div className={styles.container}>
-            <button className="btn btn-primary" disabled={!isValidJson} onClick={handlePlay}>Play</button>
-            <button className="btn btn-default" disabled={!isValidJson} onClick={handlePause}>Pause</button>
-            <button className="btn btn-default" disabled={!isValidJson}>&lt; Previous</button>
-            <button className="btn btn-default" disabled={!isValidJson}>Next &gt;</button>
+        <div>
+            <div className={styles.container}>
+                <button className="btn btn-primary" disabled={!isValidJson} onClick={handlePlay}>Play</button>
+                <button className="btn btn-default" disabled={!isValidJson} onClick={handlePause}>Pause</button>
+                <button className="btn btn-default" disabled={!isValidJson}>&lt; Previous</button>
+                <button className="btn btn-default" disabled={!isValidJson}>Next &gt;</button>
+            </div>
+            {isValidJson ? (
+                <div>
+                    Episodes
+                    <div className={styles.episodeListContainer}>
+                        <div className="list-group">
+                          {data.episodes.map((episode: any, index: number) => (
+                            <a
+                                href="#"
+                                className={`list-group-item ${index === playingEpisode ? 'active' : ''}`}
+                                onClick={(e) => handleEpisodeClick(e, index)}
+                            >{episode.title}</a>
+                          ))}
+                        </div>
+                    </div>
+                </div>
+            ) : null}
         </div>
     );
 

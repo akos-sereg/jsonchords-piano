@@ -55,6 +55,10 @@ export const PlayingContextProvider: FC = ({ children }) => {
                 setPlayingEpisode(nextEpisode);
                 return;
             }
+
+            setPlayingEpisode(0);
+            setPlayingChord(0);
+            setPlaying(false);
         }, data.episodes[playingEpisode].chords[playingChord].interval);
 
     }, [isPlaying, playingEpisode, playingChord]);

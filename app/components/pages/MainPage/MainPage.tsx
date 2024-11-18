@@ -18,17 +18,6 @@ const MainPage = () => {
               <JsonChordsText />
               <div className={styles.episodes}>
                 <PlayControls />
-                {isValidJson ? (
-                    <div>
-                        <select>
-                            {data.episodes.map((episode: any, index: number) => (
-                               <option key={index}>
-                                     {episode.title}
-                               </option>
-                             ))}
-                        </select>
-                    </div>
-                ) : null}
               </div>
            </div>
        </div>

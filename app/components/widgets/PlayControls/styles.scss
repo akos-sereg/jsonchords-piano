@@ -4,3 +4,9 @@
     display: flex;
     gap: 10px;
 }
+
+.episodeListContainer {
+    width: 280px;
+    height: 400px;
+    overflow-y: scroll;
+}
