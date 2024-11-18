@@ -1,0 +1,28 @@
+{
+  "title": "Peppa Pig",
+  "episodes": [
+    {
+      "title": "1",
+      "chords": [
+        { "chord": ["O3-G", "O5-G"], "interval": 500 },
+        { "chord": ["O4-C", "O5-E"], "interval": 250 },
+        { "chord": ["O5-C"], "interval": 250 },
+        { "chord": ["O4-D", "O5-D"], "interval": 500 },
+        { "chord": ["O3-G", "O4-G"], "interval": 500 },
+        { "chord": ["O3-G", "O4-G"], "interval": 250 },
+        { "chord": ["O4-H"], "interval": 250 },
+        { "chord": ["O4-D", "O5-D"], "interval": 250 },
+        { "chord": ["O5-F"], "interval": 250 },
+        { "chord": ["O4-C", "O5-E"], "interval": 500 },
+        { "chord": ["O3-G", "O5-C"], "interval": 500 },
+        { "chord": ["O4-C", "O5-E"], "interval": 500 },
+        { "chord": ["O3-G"], "interval": 250 },
+        { "chord": ["O5-E"], "interval": 250 },
+        { "chord": ["O4-C", "O5-G"], "interval": 500 },
+        { "chord": ["O3-G"], "interval": 500 },
+        { "chord": ["O4-C"], "interval": 500 },
+        { "chord": ["O3-G"], "interval": 500 }
+      ]
+    }
+  ]
+}
