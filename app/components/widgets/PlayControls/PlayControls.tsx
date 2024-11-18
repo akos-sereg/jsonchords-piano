@@ -42,8 +42,6 @@ const PlayControls = () => {
             <div className={styles.container}>
                 <button className="btn btn-primary" disabled={!isValidJson || isPlaying} onClick={handlePlay}>Play</button>
                 <button className="btn btn-default" disabled={!isValidJson || !isPlaying} onClick={handlePause}>Pause</button>
-                <button className="btn btn-default" disabled={!isValidJson}>&lt; Previous</button>
-                <button className="btn btn-default" disabled={!isValidJson}>Next &gt;</button>
             </div>
              <JsonValidationSectionMessage />
             {isValidJson ? (
