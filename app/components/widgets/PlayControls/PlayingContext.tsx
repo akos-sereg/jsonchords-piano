@@ -70,7 +70,7 @@ export const PlayingContextProvider: FC = ({ children }) => {
 
             setPlayingChord(0);
             setPlaying(false);
-        }, data.episodes[playingEpisode].chords[playingChord].interval);
+        }, data?.episodes[playingEpisode]?.chords[playingChord]?.interval ?? 300);
 
     }, [isPlaying, playingEpisode, playingChord]);
 
