@@ -46,6 +46,7 @@ export const PlayingContextProvider: FC = ({ children }) => {
 
         setPlayingEpisode(0);
         setPlayingChord(0);
+        console.log('--> reset to defaults');
     }, [data, isValidJson, setPlayingEpisode, setPlayingChord, playingChord, playingEpisode]);
 
     useEffect(() => {

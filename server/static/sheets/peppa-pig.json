@@ -2,7 +2,7 @@
   "title": "Peppa Pig",
   "episodes": [
     {
-      "title": "1",
+      "title": "Riff",
       "chords": [
         { "chord": ["O3-G", "O5-G"], "interval": 500 },
         { "chord": ["O4-C", "O5-E"], "interval": 250 },

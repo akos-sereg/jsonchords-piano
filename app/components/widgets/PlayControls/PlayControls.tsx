@@ -74,7 +74,7 @@ const PlayControls = () => {
 
                         <div className={styles.listContainer}>
                             <div className="list-group">
-                              {data.episodes[playingEpisode].chords.map((chordItem: any, index: number) => (
+                              {data.episodes[playingEpisode]?.chords.map((chordItem: any, index: number) => (
                                 <a
                                     id={`chord-${index}`}
                                     href="#"

@@ -22,7 +22,6 @@ const Piano = ({ displayNotes }: PianoProps) => {
     let ratio = getScreenRatio();
 
     const octaves = ['O1', 'O2', 'O3', 'O4', 'O5', 'O6', 'O7'];
-    console.log('--> refresh: ', displayNotes);
     const displayedNotes = displayNotes.map((note) => {
         const fragments = note.split('-');
         const octavNumber = Number(fragments[0].replace(/O/, ''));
