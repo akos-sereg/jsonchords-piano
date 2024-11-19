@@ -39,8 +39,10 @@ const PlayControls = () => {
     }
 
     useEffect(() => {
-        document.getElementById(`chord-${playingChord}`)?.scrollIntoView(true);
-    }, [playingChord]);
+        if (isPlaying) {
+            document.getElementById(`chord-${playingChord}`)?.scrollIntoView(true);
+        }
+    }, [playingChord, isPlaying]);
 
     const progress = useMemo(() => {
         const fullLength = getFullLengthMs(data);
@@ -84,7 +86,7 @@ const PlayControls = () => {
                         </div>
                     </div>
                     <div className={`progress ${styles.progress}`}>
-                      <div className="progress-bar" role="progressbar" aria-valuenow={60} aria-valuemin={0} aria-valuemax={100}  style={{ width: `${progress}%` }}>
+                      <div className="progress-bar" role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}  style={{ width: `${progress}%` }}>
                         <span className="sr-only">60% Complete</span>
                       </div>
                     </div>
