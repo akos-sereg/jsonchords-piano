@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState, useContext } from 'react';
+import { useState, useContext, useMemo } from 'react';
 import Piano from '../../widgets/Piano/Piano';
 import PlayControls from '../../widgets/PlayControls/PlayControls';
 import JsonChordsText from '../../widgets/JsonChordsText/JsonChordsText';
@@ -11,9 +11,17 @@ const MainPage = () => {
     const { isValidJson, data } = useContext(JsonChordsTextContext);
     const { playingEpisode, playingChord, isPlaying } = useContext(PlayingContext);
 
+    const displayedNotes = useMemo(() => {
+        try {
+            return data ? data.episodes[playingEpisode].chords[playingChord].chord : [];
+        } catch (error) {
+            return [];
+        }
+    }, [data, playingEpisode, playingChord]);
+
     return (
        <div>
-           <Piano displayNotes={data ? data.episodes[playingEpisode].chords[playingChord].chord : []} />
+           <Piano displayNotes={displayedNotes} />
            <div className={styles.codeAndEpisodes}>
               <JsonChordsText />
               <div className={styles.episodes}>

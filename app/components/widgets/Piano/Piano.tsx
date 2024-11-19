@@ -32,7 +32,7 @@ const Piano = ({ displayNotes }: PianoProps) => {
         playSound(note);
 
         // display on UI
-        if (fragments[1].includes('#')) {
+        if (fragments.length > 1 && fragments[1].includes('#')) {
            const offsetX = (ratio * octaveImageOriginalWidth) * (octavNumber - 1) + halfNoteOffsets[fragments[1].replace('#', '')] * ratio;
            return (
                <img
