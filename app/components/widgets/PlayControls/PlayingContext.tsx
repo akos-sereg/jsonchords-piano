@@ -21,7 +21,7 @@ const PlayingContext = createContext<PlayingContextType>({
 });
 
 export const PlayingContextProvider: FC = ({ children }) => {
-    const { data } = useContext(JsonChordsTextContext);
+    const { data, isValidJson } = useContext(JsonChordsTextContext);
     const [isPlaying, setPlaying] = useState(false);
     const [playingEpisode, setPlayingEpisode] = useState(0);
     const [playingChord, setPlayingChord] = useState(0);
@@ -34,6 +34,19 @@ export const PlayingContextProvider: FC = ({ children }) => {
         playingChord,
         setPlayingChord,
     }), [isPlaying, setPlaying, setPlayingEpisode, playingEpisode, playingChord, setPlayingChord]);
+
+    useEffect(() => {
+        if (!isValidJson) {
+            return;
+        }
+
+        if (playingEpisode < data.episodes.length && playingChord < data.episodes[playingEpisode].chords.length) {
+            return;
+        }
+
+        setPlayingEpisode(0);
+        setPlayingChord(0);
+    }, [data, isValidJson, setPlayingEpisode, setPlayingChord, playingChord, playingEpisode]);
 
     useEffect(() => {
         if (!isPlaying) {
@@ -54,7 +67,6 @@ export const PlayingContextProvider: FC = ({ children }) => {
                 return;
             }
 
-            // setPlayingEpisode(0);
             setPlayingChord(0);
             setPlaying(false);
         }, data.episodes[playingEpisode].chords[playingChord].interval);
