@@ -85,6 +85,25 @@
         { "chord": ["O4-A#"], "interval": 350},
         { "chord": ["O3-F", "O4-F"], "interval": 700}
       ]
+    },
+    {
+      "title": "Bridge",
+      "chords": [
+        { "chord": ["O3-F"], "interval": 600 },
+        { "chord": ["O3-G#", "O4-C", "O4-F"], "interval": 350 },
+        { "chord": ["O4-F"], "interval": 350},
+        { "chord": ["O3-F", "O4-G#"], "interval": 350},
+        { "chord": ["O4-G#"], "interval": 350},
+        { "chord": ["O3-G#", "O5-C"], "interval": 350},
+        { "chord": ["O5-C"], "interval": 350},
+        { "chord": ["O3-A#", "O5-D"], "interval": 350},
+        { "chord": ["O4-A#"], "interval": 350},
+        { "chord": ["O4-A#"], "interval": 350},
+        { "chord": ["O4-A#"], "interval": 350},
+        { "chord": ["O5-D"], "interval": 350},
+        { "chord": ["O5-D"], "interval": 350},
+        { "chord": ["O4-A#"], "interval": 350}
+      ]
     }
   ]
 }
