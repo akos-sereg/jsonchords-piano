@@ -46,6 +46,7 @@ export const PlayingContextProvider: FC = ({ children }) => {
 
         setPlayingEpisode(0);
         setPlayingChord(0);
+        console.log('--> reset to defaults');
     }, [data, isValidJson, setPlayingEpisode, setPlayingChord, playingChord, playingEpisode]);
 
     useEffect(() => {
@@ -57,15 +58,12 @@ export const PlayingContextProvider: FC = ({ children }) => {
             const nextPlayingChord = playingChord + 1;
             if (data.episodes[playingEpisode].chords.length > nextPlayingChord) {
                 setPlayingChord(nextPlayingChord);
-
-                if (data.episodes.length -1 === playingEpisode && data.episodes[playingEpisode].chords.length -1 === nextPlayingChord) {
-                    setPlaying(false);
-                }
                 return;
             }
 
             const nextEpisode = playingEpisode + 1;
             if (data.episodes.length > nextEpisode) {
+                setPlayingChord(0);
                 setPlayingEpisode(nextEpisode);
                 return;
             }
