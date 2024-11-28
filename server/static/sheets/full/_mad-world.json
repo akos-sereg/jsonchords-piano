@@ -30,6 +30,40 @@
         { "chord": ["O3-A#"], "interval": 600 },
         { "chord": ["O4-D", "O4-F"], "interval": 300 }
       ]
+    },
+    {
+      "title": "Verse",
+      "chords": [
+        { "chord": ["O3-F"], "interval": 600 },
+        { "chord": ["O3-G#", "O4-C", "O4-F"], "interval": 350 },
+        { "chord": ["O4-F"], "interval": 350},
+        { "chord": ["O3-F", "O4-G#"], "interval": 350},
+        { "chord": ["O4-G#"], "interval": 350},
+        { "chord": ["O3-G#", "O4-C", "O4-F"], "interval": 350},
+        { "chord": ["O4-F"], "interval": 350},
+        { "chord": ["O3-G#", "O5-C"], "interval": 350},
+        { "chord": ["O5-C"], "interval": 350},
+        { "chord": ["O4-C", "O4-D#"], "interval": 350},
+        { "chord": ["O5-C"], "interval": 350},
+        { "chord": ["O3-G#"], "interval": 350},
+        { "chord": ["O4-G#"], "interval": 700},
+
+        { "chord": ["O3-D#", "O4-A#"], "interval": 350},
+        { "chord": ["O4-A#"], "interval": 350},
+        { "chord": ["O3-G", "O3-A#"], "interval": 350},
+        { "chord": ["O4-A#"], "interval": 350},
+        { "chord": ["O3-D#"], "interval": 350},
+        { "chord": ["O4-G"], "interval": 700},
+
+        { "chord": ["O3-A#", "O4-A#"], "interval": 350},
+        { "chord": ["O4-A#"], "interval": 350},
+        { "chord": ["O4-D", "O4-F"], "interval": 350},
+        { "chord": ["O4-A#"], "interval": 350},
+        { "chord": ["O3-A#"], "interval": 350},
+        { "chord": ["O4-G#"], "interval": 350},
+        { "chord": ["O4-G"], "interval": 350},
+        { "chord": ["O4-F"], "interval": 350}
+      ]
     }
   ]
 }
