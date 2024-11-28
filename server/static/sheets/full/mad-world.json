@@ -104,6 +104,19 @@
         { "chord": ["O5-D"], "interval": 350},
         { "chord": ["O4-A#"], "interval": 350}
       ]
+    },
+    {
+      "title": "Outro",
+      "chords": [
+        { "chord": ["O3-F", "O4-G#", "O5-G#"], "interval": 350 },
+        { "chord": ["O4-G#", "O5-G#"], "interval": 350 },
+        { "chord": ["O3-G#", "O4-G", "O5-G"], "interval": 350 },
+        { "chord": ["O4-G", "O5-G"], "interval": 350 },
+        { "chord": ["O3-F", "O4-F", "O5-F"], "interval": 350 },
+        { "chord": ["O4-F", "O5-F"], "interval": 350 },
+        { "chord": ["O3-G#", "O4-D#", "O5-D#"], "interval": 700 },
+        { "chord": ["O4-D", "O5-D", "O2-A#", "O3-A#", "O3-F"], "interval": 700 }
+      ]
     }
   ]
 }
