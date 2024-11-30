@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { useCallback } from 'react';
+import { useCallback, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
+import PlayingContext from '../../widgets/PlayControls/PlayingContext';
 import styles from './style.scss';
 
 interface Song {
@@ -49,6 +50,7 @@ const Songs : Song[] = [
 ];
 
 const SongsPage = () => {
+    const { setPlayingEpisode, setPlayingChord } = useContext(PlayingContext);
     const history = useHistory();
 
     const handleSelectSong = useCallback(async (e: any, song: Song) => {
@@ -61,6 +63,8 @@ const SongsPage = () => {
 
         // const json = await response.json();
         localStorage.setItem('most-recent-data', await response.text());
+        setPlayingEpisode(0);
+        setPlayingChord(0);
         history.push('/#/app');
     }, []);
 
