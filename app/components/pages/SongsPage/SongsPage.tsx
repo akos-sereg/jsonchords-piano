@@ -1,7 +1,16 @@
 import * as React from 'react';
+import { useCallback } from 'react';
+import { useHistory } from 'react-router-dom';
 import styles from './style.scss';
 
-const Songs = [
+interface Song {
+    title: string;
+    file: string;
+    coverImage: string;
+    type: 'full' | 'riff';
+}
+
+const Songs : Song[] = [
     {
         title: 'Jurassic Park',
         file: 'jurassic-park.json',
@@ -40,11 +49,26 @@ const Songs = [
 ];
 
 const SongsPage = () => {
+    const history = useHistory();
+
+    const handleSelectSong = useCallback(async (e: any, song: Song) => {
+        e.preventDefault();
+
+        const response = await fetch(`/static/sheets/${song.type}/${song.file}`);
+        if (!response.ok) {
+          throw new Error(`Response status: ${response.status}`);
+        }
+
+        // const json = await response.json();
+        localStorage.setItem('most-recent-data', await response.text());
+        history.push('/#/app');
+    }, []);
+
     return (
         <div className={styles.container}>
             {Songs.map((song) => (
 
-                <div className={`panel panel-default ${styles.card}`}>
+                <div key={`${song.type}/${song.file}`} className={`panel panel-default ${styles.card}`}>
                   <div className="panel-body">
                     <div className={styles.centered}>
                         <img height="170" src={`/static/images/${song.coverImage}`} />
@@ -53,7 +77,7 @@ const SongsPage = () => {
                         <div className="caption">
                           <h3>{song.title}</h3>
                         </div>
-                        <p><a href="#" className="btn btn-primary" role="button">Play</a></p>
+                        <p><a href="#" onClick={(event) => handleSelectSong(event, song)} className="btn btn-primary" role="button">Play</a></p>
                     </div>
                   </div>
                 </div>
