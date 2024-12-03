@@ -1,0 +1,84 @@
+{
+  "title": "Teardrop",
+  "episodes": [
+    {
+      "title": "Intro",
+      "chords": [
+        { "chord": ["O2-A"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-E"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O4-E"], "interval": 400 },
+
+        { "chord": ["O2-A"], "interval": 400  },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-E"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 }
+      ]
+    },
+    {
+      "title": "Verse 1",
+      "chords": [
+        { "chord": ["01-A", "O2-A"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-E"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O4-E"], "interval": 400 },
+
+        { "chord": ["O1-G", "O2-G"], "interval": 400  },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-E"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O4-E"], "interval": 400 },
+
+        { "chord": ["O1-D", "O2-D"], "interval": 400  },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-E"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O3-A"], "interval": 400 },
+        { "chord": ["O4-D"], "interval": 400 },
+        { "chord": ["O4-E"], "interval": 400 }
+      ]
+    },
+    {
+      "title": "Verse 2",
+      "chords": [
+        { "chord": ["O5-A"], "interval": 800 },
+        { "chord": ["O5-A"], "interval": 800 },
+        { "chord": ["O5-G#"], "interval": 200 },
+        { "chord": ["O5-E"], "interval": 400 },
+        { "chord": ["O5-F#"], "interval": 800 },
+        { "chord": ["O5-D"], "interval": 800 },
+        { "chord": ["O5-D"], "interval": 600 },
+        { "chord": ["O5-E"], "interval": 200 },
+        { "chord": ["O5-D"], "interval": 400 },
+        { "chord": ["O5-C"], "interval": 200 },
+        { "chord": ["O4-A"], "interval": 800 },
+
+        { "chord": ["O4-A"], "interval": 200 },
+        { "chord": ["O5-G"], "interval": 400 },
+        { "chord": ["O5-E"], "interval": 800 },
+        { "chord": ["O5-D"], "interval": 800 },
+        { "chord": ["O5-D"], "interval": 600 },
+        { "chord": ["O5-D"], "interval": 200 },
+        { "chord": ["O5-D"], "interval": 200 },
+        { "chord": ["O5-C#"], "interval": 200 },
+        { "chord": ["O5-E"], "interval": 800 }
+      ]
+    }
+  ]
+}

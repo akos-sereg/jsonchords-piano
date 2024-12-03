@@ -47,10 +47,16 @@ const Songs : Song[] = [
         coverImage: 'star-wars.png',
         type: 'riff',
     },
+    {
+        title: 'Teardrop',
+        file: 'teardrop.json',
+        coverImage: 'mezannine.jpg',
+        type: 'full',
+    },
 ];
 
 const SongsPage = () => {
-    const { setPlayingEpisode, setPlayingChord } = useContext(PlayingContext);
+    const { setPlaying, setPlayingEpisode, setPlayingChord } = useContext(PlayingContext);
     const history = useHistory();
 
     const handleSelectSong = useCallback(async (e: any, song: Song) => {
@@ -63,6 +69,7 @@ const SongsPage = () => {
 
         // const json = await response.json();
         localStorage.setItem('most-recent-data', await response.text());
+        setPlaying(false);
         setPlayingEpisode(0);
         setPlayingChord(0);
         history.push('/#/app');

@@ -11,7 +11,7 @@ const Header = () => (
       </Link>
       <ul className="nav navbar-nav">
         <li>
-          <Link to="/app">Home</Link>
+          <Link to="/app">Editor</Link>
         </li>
         <li>
           <Link to="/songs">Songs</Link>
