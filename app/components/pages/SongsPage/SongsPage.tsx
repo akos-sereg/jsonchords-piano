@@ -72,7 +72,7 @@ const SongsPage = () => {
         setPlaying(false);
         setPlayingEpisode(0);
         setPlayingChord(0);
-        history.push('/#/app');
+        history.push('/app');
     }, []);
 
     return (

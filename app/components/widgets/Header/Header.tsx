@@ -11,10 +11,10 @@ const Header = () => (
       </Link>
       <ul className="nav navbar-nav">
         <li>
-          <Link to="/app">Editor</Link>
+          <Link to="/songs">Songs</Link>
         </li>
         <li>
-          <Link to="/songs">Songs</Link>
+          <Link to="/app">Editor</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
