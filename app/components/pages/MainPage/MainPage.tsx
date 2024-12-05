@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { BrowserView, MobileView } from 'react-device-detect';
 import { useState, useContext, useMemo } from 'react';
 import Piano from '../../widgets/Piano/Piano';
 import PlayControls from '../../widgets/PlayControls/PlayControls';
@@ -21,6 +22,7 @@ const MainPage = () => {
 
     return (
        <div>
+        <BrowserView>
            <Piano displayNotes={displayedNotes} />
            <div className={styles.codeAndEpisodes}>
               <JsonChordsText />
@@ -28,6 +30,10 @@ const MainPage = () => {
                 <PlayControls />
               </div>
            </div>
+        </BrowserView>
+        <MobileView>
+            Mobile is not supported
+        </MobileView>
        </div>
    );
 

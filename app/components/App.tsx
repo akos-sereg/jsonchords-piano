@@ -5,7 +5,6 @@ import SongsPage from './pages/SongsPage';
 import AboutPage from './pages/AboutPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Header from './widgets/Header';
-import Footer from '../components/widgets/Footer';
 import { JsonChordsTextContextProvider } from './widgets/JsonChordsText/JsonChordsTextContext';
 import { PlayingContextProvider } from './widgets/PlayControls/PlayingContext';
 
@@ -26,8 +25,6 @@ const App = () => (
         </PlayingContextProvider>
       </JsonChordsTextContextProvider>
     </div>
-
-    <Footer />
   </div>
 );
 
