@@ -1,6 +1,16 @@
-# react-redux-boilerplate
+# jsonchords-piano
 
-This project is a working standalone front-end app aiming to demonstrate best javascript practices and common usage of React / Redux.
+## TODOs
+
+- features
+  - support mobile in a limited way
+  - indicate auto-save to local storage
+  - replace logo
+  - search bar
+  - account handling
+- tests
+  - create unit tests
+  - create cypress tests
 
 ## Stack
 
