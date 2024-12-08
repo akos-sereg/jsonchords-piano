@@ -27,6 +27,7 @@ const PlayControls = () => {
 
     const handleEpisodeClick = (event: any, episodeIndex: number) => {
         event.stopPropagation();
+        event.preventDefault();
         setPlayingEpisode(episodeIndex);
         setPlayingChord(0);
         setPlaying(false);
@@ -34,6 +35,7 @@ const PlayControls = () => {
 
     const handleChordClick = (event: any, chordIndex: number) => {
         event.stopPropagation();
+        event.preventDefault();
         setPlayingChord(chordIndex);
         setPlaying(false);
     }
