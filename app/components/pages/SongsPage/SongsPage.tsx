@@ -53,6 +53,12 @@ const Songs : Song[] = [
         coverImage: 'mezannine.jpg',
         type: 'full',
     },
+    {
+        title: 'Nobody Home',
+        file: 'nobody-home.json',
+        coverImage: 'the-wall.jpg',
+        type: 'full',
+    },
 ];
 
 const SongsPage = () => {
