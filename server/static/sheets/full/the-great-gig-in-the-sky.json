@@ -138,6 +138,42 @@
         { "chord": ["O4-C"], "interval": 300 },
         { "chord": ["O4-D#"], "interval": 900 }
       ]
+    },
+    {
+      "title": "Part 4 - Outro",
+      "chords": [
+        { "chord": ["O1-A#", "O2-A#", "O3-A", "O3-A#", "O4-D"], "interval": 600},
+        { "chord": ["O3-A"], "interval": 300 },
+        { "chord": ["O3-A"], "interval": 300 },
+        { "chord": ["O4-D"], "interval": 600 },
+        { "chord": ["O4-F"], "interval": 600 },
+
+        { "chord": ["O1-D#", "O2-D#", "O3-A#", "O4-D", "O4-G"], "interval": 600 },
+        { "chord": ["O3-G"], "interval": 300 },
+        { "chord": ["O3-G"], "interval": 300 },
+        { "chord": ["O3-A#"], "interval": 600 },
+        { "chord": ["O3-F"], "interval": 600 },
+
+        { "chord": ["O1-A#", "O2-A#", "O3-F", "O3-A#", "O4-D"], "interval": 600},
+        { "chord": ["O3-F"], "interval": 300 },
+        { "chord": ["O3-A#"], "interval": 300 },
+        { "chord": ["O4-D"], "interval": 600 },
+        { "chord": ["O4-F"], "interval": 600 },
+        { "chord": ["O4-A#"], "interval": 300 },
+        { "chord": ["O4-F"], "interval": 300 },
+        { "chord": ["O4-A#"], "interval": 300 },
+        { "chord": ["O5-D"], "interval": 300 },
+        { "chord": ["O5-F"], "interval": 600 },
+        { "chord": ["O5-D"], "interval": 300 },
+        { "chord": ["O5-F"], "interval": 300 },
+        { "chord": ["O5-A#"], "interval": 600  },
+        { "chord": ["O5-F"], "interval": 600 },
+        { "chord": ["O5-D"], "interval": 600 },
+        { "chord": ["O4-A#"], "interval": 600 },
+        { "chord": ["O4-F"], "interval": 600 },
+        { "chord": ["O4-D"], "interval": 600 },
+        { "chord": ["O3-A#"], "interval": 600 }
+      ]
     }
   ]
 }
