@@ -59,6 +59,12 @@ const Songs : Song[] = [
         coverImage: 'the-wall.jpg',
         type: 'full',
     },
+    {
+        title: 'The great gig in the sky',
+        file: 'the-great-gig-in-the-sky.json',
+        coverImage: 'dark-side-of-the-moon.jpg',
+        type: 'full',
+    },
 ];
 
 const SongsPage = () => {
@@ -92,7 +98,7 @@ const SongsPage = () => {
                     </div>
                     <div className={styles.centered}>
                         <div className="caption">
-                          <h3>{song.title}</h3>
+                          <h4>{song.title}</h4>
                         </div>
                         <p><a href="#" onClick={(event) => handleSelectSong(event, song)} className="btn btn-primary" role="button">Play</a></p>
                     </div>
