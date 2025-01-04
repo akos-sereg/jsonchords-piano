@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A minimal react-redux boilerplate with all the best practices",
   "engines": {
-    "npm": ">=3",
+    "npm": "10.1.0",
     "node": "20.9.0"
   },
   "license": "MIT",
