@@ -1,0 +1,45 @@
+{
+  "title": "Scientist",
+  "episodes": [
+    {
+      "title": "Intro",
+      "chords": [
+        { "chord": ["O2-F", "O3-F", "O4-C", "O4-F", "O4-A"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+        { "chord": ["O4-C", "O4-F", "O4-A"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+        { "chord": ["O4-C", "O4-F", "O4-A"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+        { "chord": ["O4-C", "O4-F", "O4-A"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+
+        { "chord": ["O2-A#", "O3-A#", "O4-D", "O4-F", "O4-A#"], "interval": 400},
+        { "chord": ["O2-A#", "O3-A#"], "interval": 400},
+        { "chord": ["O4-D", "O4-F", "O4-A#"], "interval": 400},
+        { "chord": ["O2-A#", "O3-A#"], "interval": 400},
+        { "chord": ["O4-D", "O4-F", "O4-A#"], "interval": 400 },
+        { "chord": ["O2-A#", "O3-A#"], "interval": 400},
+        { "chord": ["O4-D", "O4-F", "O4-A#"], "interval": 400},
+        { "chord": ["O5-C"], "interval": 400},
+
+        { "chord": ["O2-F", "O3-F", "O4-C", "O4-F", "O4-A"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+        { "chord": ["O4-C", "O4-F", "O4-A"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+        { "chord": ["O4-C", "O4-F", "O4-A"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+        { "chord": ["O4-C", "O4-F", "O4-A"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+
+        { "chord": ["O2-F", "O3-F", "O4-C", "O4-F", "O4-G"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+        { "chord": ["O4-C", "O4-F", "O4-G"], "interval": 400},
+        { "chord": ["O2-F", "O3-F"], "interval": 400},
+        { "chord": ["O2-E", "O3-E", "O4-C", "O4-F", "O4-G"], "interval": 400},
+        { "chord": ["O2-E", "O3-E"], "interval": 400},
+        { "chord": ["O4-C", "O4-F", "O4-G"], "interval": 400},
+        { "chord": ["O2-E", "O3-E"], "interval": 400}
+      ]
+    }
+  ]
+}
