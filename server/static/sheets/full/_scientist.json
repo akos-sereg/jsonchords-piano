@@ -108,7 +108,21 @@
     {
       "title": "Bridge",
       "chords": [
-        { "chord": ["O1-A#", "O2-A#", "O4-C", "O4-F", "O4-A"], "interval": 800}
+        { "chord": ["O2-C", "O3-C", "O4-C", "O4-E", "O4-G"], "interval": 400},
+        { "chord": ["O3-C"], "interval": 200},
+        { "chord": ["O2-C"], "interval": 200},
+        { "chord": ["O2-C", "O3-C", "O4-C", "O4-E", "O4-G"], "interval": 400},
+        { "chord": ["O3-C"], "interval": 200},
+        { "chord": ["O2-C"], "interval": 200},
+        { "chord": ["O2-C", "O3-C", "O4-C", "O4-E", "O4-G"], "interval": 400},
+        { "chord": ["O4-C", "O4-E", "O4-A"], "interval": 800},
+        { "chord": ["O4-C", "O4-A#"], "interval": 800},
+        { "chord": ["O2-C", "O3-C", "O4-C", "O4-A#"], "interval": 400},
+        { "chord": ["O2-C", "O3-C", "O4-C", "O4-A#"], "interval": 400},
+        { "chord": ["O2-C", "O3-C", "O4-C", "O4-A#"], "interval": 400},
+        { "chord": ["O2-C", "O3-C", "O4-C", "O4-A#"], "interval": 400},
+        { "chord": ["O2-C", "O3-C", "O4-C", "O4-A#"], "interval": 400},
+        { "chord": ["O2-C", "O3-C", "O4-C", "O4-A#"], "interval": 400}
       ]
     }
 
