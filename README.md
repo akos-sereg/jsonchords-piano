@@ -1,16 +1,6 @@
 # jsonchords-piano
 
-## TODOs
-
-- features
-  - support mobile in a limited way
-  - indicate auto-save to local storage
-  - replace logo
-  - search bar
-  - account handling
-- tests
-  - create unit tests
-  - create cypress tests
+Source codes of https://www.jsonchords.com
 
 ## Stack
 
@@ -60,9 +50,6 @@ This will produce artifacts under `build`
 | ESLint                         | `npm run eslint`       |
 | ESLint Fix                     | `npm run eslint-fix`   |
 | Prettier                       | `npm run format`       |
-| Unit Tests                     | `npm run test`         |
-| E2E Tests for Humans           | `npm run cypress:open` |
-| E2E Tests for Machines (CI/CD) | `npm run cypress:run`  |
 
 ## Features
 
@@ -79,7 +66,6 @@ This will produce artifacts under `build`
 - Sourcemap
 - Emotion
 - Jest (with coverage reporting on typescript files)
-- Cypress (E2E)
 - ESLint
 - Prettier
 
@@ -87,32 +73,3 @@ This will produce artifacts under `build`
 
 - Bootstrap 3
 - Toastr notifications
-
-### TODOs
-
-- Introduce react-error-boundary
-
-## Testing
-
-Run the following command
-
-```
-$ npm run test
-```
-
-It generates a coverage report as well. You can set coverage expectations in `config/jest.config.js`
-
-## E2E Testing
-
-Make sure that the application is running (`npm start`), and you are using `InMemory` backend (`app/services/ConfigService.ts`), as E2E tests
-are running against your local instance.
-
-Then run the following command
-
-```
-$ npm run cypress:open
-```
-
-For headless run (eg. on CI/CD, like Jenkins) you can execute `npm run cypress:run`
-
-For more information, read `cypress/Readme.md`
