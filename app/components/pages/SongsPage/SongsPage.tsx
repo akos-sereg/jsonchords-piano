@@ -65,6 +65,12 @@ const Songs : Song[] = [
         coverImage: 'dark-side-of-the-moon.jpg',
         type: 'full',
     },
+    {
+        title: 'The Scientist',
+        file: 'the-scientist.json',
+        coverImage: 'the-scientist.png',
+        type: 'full',
+    },
 ];
 
 const SongsPage = () => {

@@ -180,6 +180,68 @@
         { "chord": ["O3-E"], "interval": 200},
         { "chord": ["O2-E"], "interval": 200}
       ]
+    },
+    {
+      "title": "Outro",
+      "chords": [
+        { "chord": ["O1-D", "O2-D", "O4-C", "O4-F", "O4-A"], "interval": 800},
+        { "chord": ["O2-D", "O3-D"], "interval": 400},
+        { "chord": ["O3-F", "O3-A", "O4-D"], "interval": 800},
+        { "chord": ["O5-D"], "interval": 400},
+        { "chord": ["O4-D"], "interval": 400},
+        { "chord": ["O5-D", "O5-A"], "interval": 450},
+        { "chord": ["O1-A#", "O2-A#"], "interval": 350},
+        { "chord": ["O3-F"], "interval": 400},
+        { "chord": ["O3-A#"], "interval": 400},
+        { "chord": ["O4-D"], "interval": 800},
+        { "chord": ["O5-G"], "interval": 400},
+        { "chord": ["O5-F"], "interval": 400},
+        { "chord": ["O5-D"], "interval": 400},
+        { "chord": ["O1-F", "O2-F", "O5-C"], "interval": 1200},
+        { "chord": ["O4-C"], "interval": 1200},
+
+        { "chord": ["O3-C", "O3-A", "O4-C", "O4-F", "O4-A"], "interval": 200},
+        { "chord": ["O4-A#"], "interval": 200},
+        { "chord": ["O4-A"], "interval": 200},
+        { "chord": ["O4-F"], "interval": 200},
+        { "chord": ["O1-F", "O2-F"], "interval": 400},
+        { "chord": ["O4-C"], "interval": 400},
+
+        { "chord": ["O3-C", "O3-A", "O4-C", "O4-F", "O4-A"], "interval": 200},
+        { "chord": ["O4-A#"], "interval": 200},
+        { "chord": ["O4-A"], "interval": 200},
+        { "chord": ["O4-F"], "interval": 200},
+        { "chord": ["O1-F", "O2-F"], "interval": 400},
+        { "chord": ["O4-C"], "interval": 400},
+
+        { "chord": ["O3-C", "O3-A", "O4-C", "O4-F", "O4-A"], "interval": 200},
+        { "chord": ["O4-A#"], "interval": 200},
+        { "chord": ["O4-A"], "interval": 200},
+        { "chord": ["O4-F"], "interval": 200},
+        { "chord": ["O1-F", "O2-F"], "interval": 400},
+        { "chord": ["O4-C", "O4-F", "O4-A"], "interval": 400},
+
+        { "chord": ["O1-E", "O2-E"], "interval": 400}
+      ]
+    },
+    {
+      "title": "Outro Final",
+      "chords": [
+        { "chord": ["O1-D", "O2-D", "O4-C", "O4-F", "O4-A"], "interval": 800},
+        { "chord": ["O2-D", "O3-D"], "interval": 400},
+        { "chord": ["O3-F", "O3-A", "O4-D"], "interval": 800},
+        { "chord": ["O5-D"], "interval": 400},
+        { "chord": ["O4-D"], "interval": 400},
+        { "chord": ["O5-D", "O5-A"], "interval": 450},
+        { "chord": ["O1-A#", "O2-A#"], "interval": 350},
+        { "chord": ["O3-F"], "interval": 400},
+        { "chord": ["O3-A#"], "interval": 400},
+        { "chord": ["O4-D"], "interval": 800},
+        { "chord": ["O5-G"], "interval": 400},
+        { "chord": ["O5-F"], "interval": 400},
+        { "chord": ["O5-D"], "interval": 400},
+        { "chord": ["O1-F", "O2-F", "O5-C"], "interval": 1200}
+      ]
     }
 
   ]
