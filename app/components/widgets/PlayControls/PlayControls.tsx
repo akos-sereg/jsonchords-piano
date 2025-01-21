@@ -6,7 +6,11 @@ import JsonValidationSectionMessage from '../JsonChordsText/JsonValidationSectio
 import PlayingContext from './PlayingContext';
 import { getFullLengthMs, getLengthMsUntil } from '../JsonChordsText/audioStatistics';
 
-const PlayControls = () => {
+interface PlayControlsProps {
+    disabled: boolean;
+}
+
+const PlayControls = ({ disabled } : PlayControlsProps) => {
     const { isValidJson, data } = useContext(JsonChordsTextContext);
     const {
         isPlaying,
@@ -25,9 +29,19 @@ const PlayControls = () => {
         setPlaying(false);
     }
 
+    const initAlert = () => {
+        alert('Please initialize piano notes first');
+    }
+
     const handleEpisodeClick = (event: any, episodeIndex: number) => {
         event.stopPropagation();
         event.preventDefault();
+
+        if (disabled) {
+            initAlert();
+            return;
+        }
+
         setPlayingEpisode(episodeIndex);
         setPlayingChord(0);
         setPlaying(false);
@@ -36,6 +50,12 @@ const PlayControls = () => {
     const handleChordClick = (event: any, chordIndex: number) => {
         event.stopPropagation();
         event.preventDefault();
+
+        if (disabled) {
+            initAlert();
+            return;
+        }
+
         setPlayingChord(chordIndex);
         setPlaying(false);
     }
@@ -55,8 +75,8 @@ const PlayControls = () => {
     return (
         <div>
             <div className={styles.container}>
-                <button className="btn btn-primary" disabled={!isValidJson || isPlaying} onClick={handlePlay}>Play</button>
-                <button className="btn btn-default" disabled={!isValidJson || !isPlaying} onClick={handlePause}>Pause</button>
+                <button className="btn btn-primary" disabled={!isValidJson || isPlaying || disabled} onClick={handlePlay}>Play</button>
+                <button className="btn btn-default" disabled={!isValidJson || !isPlaying || disabled} onClick={handlePause}>Pause</button>
             </div>
              <JsonValidationSectionMessage />
              {isValidJson ? (

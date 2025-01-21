@@ -1,8 +1,10 @@
 import * as React from 'react';
-import { useCallback, useContext } from 'react';
+import { useCallback, useContext, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PlayingContext from '../../widgets/PlayControls/PlayingContext';
 import styles from './style.scss';
+import { playSound } from "../../widgets/Piano/PianoAudio";
+import { indexedHalfNotes, indexedNotes } from "../../widgets/Piano/const";
 
 interface Song {
     title: string;
@@ -70,6 +72,12 @@ const Songs : Song[] = [
         file: 'the-scientist.json',
         coverImage: 'the-scientist.png',
         type: 'full',
+    },
+    {
+        title: 'Bohemian Rhapsody',
+        file: 'bohemian-rhapsody.json',
+        coverImage: 'freddy.png',
+        type: 'riff',
     },
 ];
 

@@ -1,13 +1,13 @@
 import pressed1 from '../../../images/pressed-1.png';
 import pressed2 from '../../../images/pressed-2.png';
 import pressed3 from '../../../images/pressed-3.png';
-import pressed4 from '../../../images/pressed-4.png';
 
 export const octaveImageOriginalWidth = 619;
 export const pressedImageOriginalHeight = 586;
 export const noteOriginalWidth = 88;
 
-export const indexedNotes = ['C', 'D', 'E', 'F', 'G', 'A', 'H', 'C'];
+export const indexedNotes = ['C', 'D', 'E', 'F', 'G', 'A', 'H'];
+export const indexedHalfNotes = ['C#', 'D#', 'F#', 'G#', 'A#'];
 
 export const noteMap: any = {
     'C': pressed3,
