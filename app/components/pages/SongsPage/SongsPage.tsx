@@ -79,6 +79,12 @@ const Songs : Song[] = [
         coverImage: 'freddy.png',
         type: 'riff',
     },
+    {
+        title: 'Imagine',
+        file: 'imagine.json',
+        coverImage: 'imagine.png',
+        type: 'full',
+    },
 ];
 
 const SongsPage = () => {
@@ -105,7 +111,7 @@ const SongsPage = () => {
         <div className={styles.container}>
             {Songs.map((song) => (
 
-                <div key={`${song.type}/${song.file}`} className={`panel panel-default ${styles.card}`}>
+                <div key={`${song.type}/${song.file}`} className={`panel panel-default ${styles.card}`} onClick={(event) => handleSelectSong(event, song)}>
                   <div className="panel-body">
                     <div className={styles.centered}>
                         <img height="170" src={`/static/images/${song.coverImage}`} />
@@ -114,7 +120,6 @@ const SongsPage = () => {
                         <div className="caption">
                           <h4>{song.title}</h4>
                         </div>
-                        <p><a href="#" onClick={(event) => handleSelectSong(event, song)} className="btn btn-primary" role="button">Play</a></p>
                     </div>
                   </div>
                 </div>
