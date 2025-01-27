@@ -1,10 +1,8 @@
 import * as React from 'react';
-import { useCallback, useContext, useEffect, useState } from 'react';
+import { useCallback, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import PlayingContext from '../../widgets/PlayControls/PlayingContext';
 import styles from './style.scss';
-import { playSound } from "../../widgets/Piano/PianoAudio";
-import { indexedHalfNotes, indexedNotes } from "../../widgets/Piano/const";
 
 interface Song {
     title: string;
@@ -108,23 +106,26 @@ const SongsPage = () => {
     }, []);
 
     return (
-        <div className={styles.container}>
-            {Songs.map((song) => (
+        <div>
+            <div className={styles.container}>
 
-                <div key={`${song.type}/${song.file}`} className={`panel panel-default ${styles.card}`} onClick={(event) => handleSelectSong(event, song)}>
-                  <div className="panel-body">
-                    <div className={styles.centered}>
-                        <img height="170" src={`/static/images/${song.coverImage}`} />
-                    </div>
-                    <div className={styles.centered}>
-                        <div className="caption">
-                          <h4>{song.title}</h4>
+                {Songs.map((song) => (
+
+                        <div key={`${song.type}/${song.file}`} className={`panel panel-default ${styles.card}`} onClick={(event) => handleSelectSong(event, song)}>
+                            <div className="panel-body">
+                                <div className={styles.centered}>
+                                    <img height="170" src={`/static/images/${song.coverImage}`} />
+                                </div>
+                                <div className={styles.centered}>
+                                    <div className="caption">
+                                        <h4>{song.title}</h4>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                  </div>
-                </div>
 
-            ))}
+                ))}
+            </div>
         </div>
     );
 };
