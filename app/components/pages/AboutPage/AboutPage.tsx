@@ -5,59 +5,43 @@ const AboutPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.page}>
-        <div className="panel panel-default">
-          <div className="panel-body">
-            <h1>Motivation</h1>
-            <p>
-              I started to learn playing the piano from YouTube, and Flowkey app. Reading piano
-              sheets is too complex for me, and I wanted to find a way to capture the songs that I
-              have already learned: in case I forgot some parts, I would have a chance to recap.
-            </p>
-            <p>As a software developer, JSON format was a suitable option.</p>
-          </div>
+        <div>
+          <h1>About</h1>
+          <p>
+            This tool provides a way to capture piano sheets in JSON format. It can be useful if you
+            want to ...
+          </p>
+          <ul>
+            <li>
+              <b>Learn to play a song</b>: sections (eg. intro, verse, refrain, outro) are defined
+              clearly, so you can see the structure of the song while learning. You can also step
+              from chord-to-chord, which I think is better than stop-pause cycles on a YouTube
+              tutorial video.
+            </li>
+            <li>
+              <b>Capture a song</b>: as someone who can not read musical sheets, I find it important
+              to capture the songs that I have learned. In case I forget some part after a while -
+              not playing the song -, it is easy to recap from this app.
+            </li>
+          </ul>
+
+          <p>
+            You can contribute, in case you play piano, understand JSON, and you can commit / push
+            in git :)
+          </p>
+          <p>
+            <b>Feel free to create a PR about the song you learned.</b>
+          </p>
         </div>
 
-        <div className="panel panel-default">
-          <div className="panel-body">
-            <h1>How it works</h1>
-            This site is mainly for people with software development skills who play piano. However,
-            JSON is not so hard to write, so you can assemble "sheets" even if you are not familiar
-            with JSON data format. The editor will go red when the format is not correct, and the
-            background turns black again when it is. You also have some songs for reference, under
-            menu item "Songs".
-            <p>In case you want to build this site, by adding your jsonchords:</p>
-            <ul className={styles.aboutList}>
-              <li>
-                You need to know how to <b>clone a repository</b> and create a Pull Request on
-                GitHub. In case you are not familiar with it, just send your JSON text{' '}
-                <b>to my email</b> address, and I will upload it: akos.sereg@gmail.com
-              </li>
-              <li>
-                Click on any song from "Song" menu item, and <b>start editing</b>. It will not
-                impact the stored song, but your changes will be saved on localStorage (that's a
-                built-in storage in your browser), so next time you visit the site, it will be
-                there.
-              </li>
-              <li>
-                Once you are ready, clone this repo, add your .json file to
-                server/static/sheets/full folder, <b>create a PR</b>&nbsp; (or just send me the JSON
-                text), and I will take care of the <b>deploying</b> part.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="panel panel-default">
-          <div className="panel-body">
-            <h1>Contact</h1>
-            <p>Email: akos.sereg@gmail.com</p>
-            <p>
-              GitHub:{' '}
-              <a href="https://github.com/akos-sereg/jsonchords-piano" target="out">
-                https://github.com/akos-sereg/jsonchords-piano
-              </a>
-            </p>
-          </div>
+        <div>
+          <h1>Contact</h1>
+          <p>akos.sereg@gmail.com</p>
+          <p>
+            <a href="https://github.com/akos-sereg/jsonchords-piano" target="out">
+              https://github.com/akos-sereg/jsonchords-piano
+            </a>
+          </p>
         </div>
       </div>
     </div>
