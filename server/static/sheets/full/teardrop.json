@@ -13,7 +13,7 @@
         { "chord": ["O4-D"], "interval": 400 },
         { "chord": ["O4-E"], "interval": 400 },
 
-        { "chord": ["O2-A"], "interval": 400  },
+        { "chord": ["O2-A"], "interval": 400 },
         { "chord": ["O3-A"], "interval": 400 },
         { "chord": ["O4-E"], "interval": 400 },
         { "chord": ["O3-A"], "interval": 400 },
@@ -35,7 +35,7 @@
         { "chord": ["O4-D"], "interval": 400 },
         { "chord": ["O4-E"], "interval": 400 },
 
-        { "chord": ["O1-G", "O2-G"], "interval": 400  },
+        { "chord": ["O1-G", "O2-G"], "interval": 400 },
         { "chord": ["O3-A"], "interval": 400 },
         { "chord": ["O4-E"], "interval": 400 },
         { "chord": ["O3-A"], "interval": 400 },
@@ -44,7 +44,7 @@
         { "chord": ["O4-D"], "interval": 400 },
         { "chord": ["O4-E"], "interval": 400 },
 
-        { "chord": ["O1-D", "O2-D"], "interval": 400  },
+        { "chord": ["O1-D", "O2-D"], "interval": 400 },
         { "chord": ["O3-A"], "interval": 400 },
         { "chord": ["O4-E"], "interval": 400 },
         { "chord": ["O3-A"], "interval": 400 },

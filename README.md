@@ -43,13 +43,13 @@ This will produce artifacts under `build`
 
 ### Commands
 
-| Action                         | Command                |
-| ------------------------------ | ---------------------- |
-| Start                          | `npm run start`        |
-| Production Build               | `npm run build`        |
-| ESLint                         | `npm run eslint`       |
-| ESLint Fix                     | `npm run eslint-fix`   |
-| Prettier                       | `npm run format`       |
+| Action           | Command              |
+| ---------------- | -------------------- |
+| Start            | `npm run start`      |
+| Production Build | `npm run build`      |
+| ESLint           | `npm run eslint`     |
+| ESLint Fix       | `npm run eslint-fix` |
+| Prettier         | `npm run format`     |
 
 ## Features
 

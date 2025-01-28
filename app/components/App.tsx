@@ -15,13 +15,13 @@ const App = () => (
     <div className={`container-fluid`}>
       <JsonChordsTextContextProvider>
         <PlayingContextProvider>
-            <Switch>
-                <Route exact path="/" component={SongsPage} />
-                <Route path="/app" component={MainPage} />
-                <Route path="/songs" component={SongsPage} />
-                <Route path="/about" component={AboutPage} />
-                <Route path="" component={NotFoundPage} />
-            </Switch>
+          <Switch>
+            <Route exact path="/" component={SongsPage} />
+            <Route path="/app" component={MainPage} />
+            <Route path="/songs" component={SongsPage} />
+            <Route path="/about" component={AboutPage} />
+            <Route path="" component={NotFoundPage} />
+          </Switch>
         </PlayingContextProvider>
       </JsonChordsTextContextProvider>
     </div>

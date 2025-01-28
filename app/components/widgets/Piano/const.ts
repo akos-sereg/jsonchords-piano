@@ -10,29 +10,29 @@ export const indexedNotes = ['C', 'D', 'E', 'F', 'G', 'A', 'H'];
 export const indexedHalfNotes = ['C#', 'D#', 'F#', 'G#', 'A#'];
 
 export const noteMap: any = {
-    'C': pressed3,
-    'D': pressed1,
-    'E': pressed2,
-    'F': pressed3,
-    'G': pressed1,
-    'A': pressed1,
-    'H': pressed2,
+  C: pressed3,
+  D: pressed1,
+  E: pressed2,
+  F: pressed3,
+  G: pressed1,
+  A: pressed1,
+  H: pressed2
 };
 
 export const noteOffset: any = {
-    'C': 5,
-    'D': 6,
-    'E': 6,
-    'F': 6,
-    'G': 7,
-    'A': 7,
-    'H': 7,
+  C: 5,
+  D: 6,
+  E: 6,
+  F: 6,
+  G: 7,
+  A: 7,
+  H: 7
 };
 
 export const halfNoteOffsets: any = {
-    'C': 57,
-    'D': 145,
-    'F': 322,
-    'G': 410,
-    'A': 499,
-}
+  C: 57,
+  D: 145,
+  F: 322,
+  G: 410,
+  A: 499
+};
