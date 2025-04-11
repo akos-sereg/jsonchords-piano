@@ -49,6 +49,18 @@ const Songs: Song[] = [
     type: 'riff'
   },
   {
+    title: 'Clocks',
+    file: 'clocks.json',
+    coverImage: 'clocks.png',
+    type: 'riff'
+  },
+  {
+    title: 'Pyramid Song',
+    file: 'pyramid-song.json',
+    coverImage: 'pyramid-song.png',
+    type: 'riff'
+  },
+  {
     title: 'Teardrop',
     file: 'teardrop.json',
     coverImage: 'mezannine.jpg',
@@ -82,6 +94,12 @@ const Songs: Song[] = [
     title: 'Imagine',
     file: 'imagine.json',
     coverImage: 'imagine.png',
+    type: 'full'
+  },
+  {
+    title: 'Inception',
+    file: 'inception.json',
+    coverImage: 'inception.png',
     type: 'full'
   }
 ];

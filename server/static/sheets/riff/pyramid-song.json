@@ -1,0 +1,31 @@
+{
+  "title": "Pyramid Song",
+  "episodes": [
+    {
+      "title": "Riff",
+      "chords": [
+        { "chord": ["O2-F#", "O3-C#", "O3-A#", "O4-C#", "O4-F#"], "interval": 800},
+        { "chord": ["O2-F#", "O3-C#", "O3-A#", "O4-C#", "O4-F#"], "interval": 800},
+        { "chord": ["O2-G", "O3-D", "O3-H", "O4-D", "O4-F#"], "interval": 1200},
+        { "chord": ["O2-A", "O3-E", "O3-A", "O4-C#", "O4-F#"], "interval": 800},
+        { "chord": ["O2-A", "O3-E", "O3-A", "O4-C#", "O4-F#"], "interval": 1600},
+        { "chord": ["O2-A", "O3-E", "O3-A", "O4-C#", "O4-F#"], "interval": 1200},
+        { "chord": ["O2-G", "O3-D", "O3-H", "O4-D", "O4-F#"], "interval": 800},
+        { "chord": ["O2-G", "O3-D", "O3-H", "O4-D", "O4-F#"], "interval": 1200},
+        { "chord": ["O2-G", "O3-D", "O3-H", "O4-D", "O4-G"], "interval": 650},
+        { "chord": ["O2-G", "O3-D", "O3-H", "O4-D", "O4-G"], "interval": 650},
+        { "chord": ["O2-F#", "O3-C#", "O3-A#", "O4-C#", "O4-G"], "interval": 1200},
+        { "chord": ["O2-F#", "O3-C#", "O3-A#", "O4-C#", "O4-F#"], "interval": 800},
+
+        { "chord": ["O2-G", "O3-D", "O3-H", "O4-D", "O4-F#"], "interval": 1200},
+        { "chord": ["O2-A", "O3-E", "O3-A", "O4-C#", "O4-F#"], "interval": 800},
+        { "chord": ["O2-A", "O3-E", "O3-A", "O4-C#", "O4-F#"], "interval": 1600},
+        { "chord": ["O2-A", "O3-E", "O3-A", "O4-C#", "O4-F#"], "interval": 1200},
+        { "chord": ["O2-G", "O3-D", "O3-H", "O4-D", "O4-F#"], "interval": 800},
+        { "chord": ["O2-G", "O3-D", "O3-H", "O4-D", "O4-F#"], "interval": 1600},
+        { "chord": ["O2-F#", "O3-C#", "O3-A#", "O4-C#", "O4-F#"], "interval": 800}
+
+      ]
+    }
+  ]
+}
