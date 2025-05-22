@@ -1,0 +1,55 @@
+{
+  "title": "Dream Theater - Fatal tragedy",
+  "episodes": [
+    {
+      "title": "I am alone at night",
+      "chords": [
+        { "chord": ["O2-E", "O3-E"], "interval": 600 },
+        { "chord": ["O4-E", "O5-E"], "interval": 300},
+        { "chord": ["O4-F#", "O5-F#"], "interval": 600},
+        { "chord": ["O4-G", "O5-G"], "interval": 600 },
+        { "chord": ["O4-H"], "interval": 300},
+        { "chord": ["O3-H"], "interval": 600},
+        { "chord": ["O3-H"], "interval": 300},
+        { "chord": ["O4-E", "O4-H"], "interval": 300},
+        { "chord": ["O3-G"], "interval": 300},
+        { "chord": ["O3-H"], "interval": 300},
+        { "chord": ["O4-E", "O4-G"], "interval": 300},
+        { "chord": ["O1-H"], "interval": 300}
+      ]
+    },
+    {
+      "title": "I feel so strange",
+      "chords": [
+        { "chord": ["O1-E", "O2-E", "O3-G", "O4-E", "O4-G"], "interval": 600 },
+        { "chord": ["O4-E", "O5-E"], "interval": 300},
+        { "chord": ["O4-F#", "O5-F#"], "interval": 600},
+        { "chord": ["O4-G", "O5-G"], "interval": 600 },
+        { "chord": ["O4-A#"], "interval": 300},
+        { "chord": ["O3-A#"], "interval": 600},
+        { "chord": ["O4-A#", "O4-E"], "interval": 300},
+        { "chord": ["O4-A#", "O3-A#", "O4-F#"], "interval": 300},
+        { "chord": ["O3-G"], "interval": 300},
+        { "chord": ["O4-A#", "O3-A#"], "interval": 600},
+        { "chord": ["O1-H"], "interval": 300}
+      ]
+    },
+    {
+      "title": "I need to find",
+      "chords": [
+        { "chord": ["O1-E", "O2-E", "O3-G", "O3-E", "O4-G"], "interval": 600 },
+        { "chord": ["O4-E", "O5-E"], "interval": 300},
+        { "chord": ["O4-F#", "O5-F#"], "interval": 600},
+        { "chord": ["O4-G", "O5-G"], "interval": 600 },
+        { "chord": ["O4-H", "O5-H"], "interval": 300},
+        { "chord": ["O3-H"], "interval": 600},
+        { "chord": ["O5-G"], "interval": 300},
+        { "chord": ["O5-H", "O6-H"], "interval": 300},
+        { "chord": ["O5-A", "O6-A", "O6-F#"], "interval": 300},
+        { "chord": ["O5-G", "O6-G"], "interval": 300},
+        { "chord": ["O5-E"], "interval": 300},
+        { "chord": ["O5-G", "O5-H"], "interval": 600}
+      ]
+    }
+  ]
+}
