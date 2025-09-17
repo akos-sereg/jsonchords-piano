@@ -1,0 +1,25 @@
+{
+  "title": "ELP - Trilogy",
+  "episodes": [
+    {
+      "title": "Intro",
+      "chords": [
+        { "chord": ["O6-D#"], "interval": 1000 },
+        { "chord": ["O5-F#"], "interval": 400},
+        { "chord": ["O5-H"], "interval": 400},
+        { "chord": ["O6-D"], "interval": 1000 },
+        { "chord": ["O6-C"], "interval": 400},
+        { "chord": ["O5-H"], "interval": 1000 },
+        { "chord": ["O5-F#"], "interval": 400},
+        { "chord": ["O5-A"], "interval": 1000 },
+        { "chord": ["O5-G"], "interval": 400},
+        { "chord": ["O6-E"], "interval": 400},
+        { "chord": ["O6-C"], "interval": 400},
+        { "chord": ["O5-G"], "interval": 400},
+        { "chord": ["O5-E"], "interval": 400},
+        { "chord": ["O5-D#"], "interval": 400},
+        { "chord": ["O5-H"], "interval": 400}
+      ]
+    }
+  ]
+}
