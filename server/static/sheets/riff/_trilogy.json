@@ -53,6 +53,29 @@
 
         { "chord": ["O1-H", "O2-H", "O3-F#", "O3-H", "O4-D#"], "interval": 800}
       ]
+    },
+    {
+      "title": "Pt. 3",
+      "chords": [
+        { "chord": ["O2-H"], "interval": 400},
+        { "chord": ["O2-A"], "interval": 400},
+        { "chord": ["O5-D#"], "interval": 400},
+        { "chord": ["O4-F#"], "interval": 400},
+        { "chord": ["O4-H"], "interval": 400},
+        { "chord": ["O2-G#", "O5-D"], "interval": 400},
+        { "chord": ["O4-H"], "interval": 400},
+        { "chord": ["O2-G#", "O4-E"], "interval": 400},
+        { "chord": ["O3-H"], "interval": 400},
+        { "chord": ["O2-G", "O4-E", "O4-H"], "interval": 400},
+        { "chord": ["O4-F#"], "interval": 400},
+        { "chord": ["O2-G", "O4-E", "O3-H"], "interval": 400},
+        { "chord": ["O4-C#"], "interval": 400},
+        { "chord": ["O1-H", "O2-H"], "interval": 100},
+        { "chord": ["O3-F#"], "interval": 100},
+        { "chord": ["O3-H"], "interval": 100},
+        { "chord": ["O4-C#"], "interval": 100},
+        { "chord": ["O4-D#"], "interval": 100}
+      ]
     }
   ]
 }
