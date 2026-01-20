@@ -184,7 +184,16 @@ const SongsPage = () => {
           >
             <div className="panel-body">
               <div className={styles.centered}>
-                <img height="170" src={`/static/images/${song.coverImage}`} />
+                <div className="panel-body">
+                  <div className={styles.centered} style={{ position: 'relative', display: 'inline-block' }}>
+                    <img height="170" src={`/static/images/${song.coverImage}`} alt={song.title} />
+                    {song.format === 'midi' && (
+                            <span className={styles.midiBadge}>
+                    MIDI
+                  </span>
+                    )}
+                  </div>
+                </div>
               </div>
               <div className={styles.centered}>
                 <div className="caption">
