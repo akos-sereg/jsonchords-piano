@@ -126,6 +126,13 @@ const Songs: Song[] = [
     format: 'json'
   },
   {
+    title: 'Trilogy',
+    file: 'trilogy.json',
+    coverImage: 'trilogy.png',
+    type: 'riff',
+    format: 'json'
+  },
+  {
     title: 'Is There Life On Mars',
     file: 'is-there-life-on-mars.mid',
     coverImage: 'is-there-life-on-mars.png',
@@ -145,7 +152,16 @@ const Songs: Song[] = [
     coverImage: 'the-entertainer.png',
     type: 'riff',
     format: 'midi'
+  },
+  /*
+  {
+    title: 'Inception (MIDI)',
+    file: 'inception.mid',
+    coverImage: 'inception.png',
+    type: 'full',
+    format: 'midi'
   }
+  */
 ];
 
 const SongsPage = () => {
