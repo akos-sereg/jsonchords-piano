@@ -113,6 +113,9 @@ ij_scss_value_alignment = 0
 indent_size = 2
 ij_slim_keep_indents_on_empty_lines = false
 
+[*.tsx]
+indent_size = 2
+
 [*.styl]
 indent_size = 2
 ij_stylus_align_closing_brace_with_properties = false
