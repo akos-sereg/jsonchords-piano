@@ -192,13 +192,13 @@ const SongsPage = () => {
   return (
     <div>
       <div className={styles.container}>
-        {Songs.map((song) => (
+        {Songs.sort((a, b) => b.title.localeCompare(a.title)).sort((song) => song.type === 'full' ? -1 : 1).map((song) => (
           <div
             key={`${song.type}/${song.file}`}
             className={`panel panel-default ${styles.card}`}
             onClick={(event) => handleSelectSong(event, song)}
           >
-            <div className="panel-body">
+            <div className={`panel-body ${song.type === 'riff' ? styles.riff : ''}`}>
               <div className={styles.centered}>
                 <div className="panel-body">
                   <div className={styles.centered} style={{ position: 'relative', display: 'inline-block' }}>
