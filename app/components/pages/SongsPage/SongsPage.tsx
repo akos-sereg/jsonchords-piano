@@ -193,6 +193,9 @@ const SongsPage = () => {
 
   return (
     <div>
+      <p>
+        For MIDI files, use this tool: <a href="https://app.midiano.com/" target='out'>midiano</a>
+      </p>
       <div className={styles.container}>
         {Songs.sort((a, b) => b.title.localeCompare(a.title)).sort((song) => song.type === 'full' ? -1 : 1).map((song) => (
           <div
