@@ -189,6 +189,8 @@ const SongsPage = () => {
     history.push('/app');
   }, []);
 
+  // toastr.success('Author Deleted.');
+
   return (
     <div>
       <div className={styles.container}>

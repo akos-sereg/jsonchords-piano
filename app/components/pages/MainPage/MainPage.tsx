@@ -9,7 +9,12 @@ import PlayingContext from '../../widgets/PlayControls/PlayingContext';
 import styles from './style.scss';
 import { indexedHalfNotes, indexedNotes } from '../../widgets/Piano/const';
 import { playSound } from '../../widgets/Piano/PianoAudio';
-import { sleep } from '../../../services/Utils';
+
+const sleep = async (duration: number) => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(true), duration)
+  })
+}
 
 const MainPage = () => {
   const { data } = useContext(JsonChordsTextContext);
